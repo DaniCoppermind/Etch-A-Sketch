@@ -1,0 +1,87 @@
+/* General Styles */
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    background-color: #efeff7;
+    background-size: 2em 2em;
+    background-image:  repeating-linear-gradient(0deg, #444cf7, #444cf7 0.1em, #efeff7 0.1em, #efeff7);
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.title {
+    text-align: center;
+}
+
+#etch-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1em;
+    width: 50em;
+    height: 32em;
+    margin: 0 auto;
+
+    background-color: rgba(185,21,32,255);
+    border-radius: 1.5em;
+}
+
+/* Container styles */
+
+#etch-screen {
+    width: 45em;
+    height: 22em;
+    background-color: white;
+}
+
+canvas {
+    width: inherit;
+    height: inherit;
+}
+
+/* Controls */
+
+#etch-controls {
+    display: flex;
+    align-items: center;
+    gap: 4.5em;
+}
+
+#etch-sizes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+/* Buttons styles */
+
+.btn {
+    cursor: pointer;
+    border: none;
+}
+
+
+#black-btn,
+#white-btn {
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+}
+
+#random-btn,
+#restart-btn {
+    border-radius: .5em;
+    width: 5em;
+    height: 3em;
+}
+
+.text-size {
+    align-self: flex-start;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Odin Project-Etch a Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="title">Etch-A-Sketch</h1>
+
+    <main id="etch-container">
+        <div id="etch-screen">
+            <canvas id="etchCanvas"></canvas>
+        </div>
+
+        <div id="etch-controls">
+            <button id="black-btn" class="btn">Black</button>
+            <button id="random-btn" class="btn">Random</button>
+            <div id="etch-sizes">
+                <p class="text-size"></p>
+                <input type="range" id="size-btn" class="input">
+            </div>
+            <button id="restart-btn" class="btn">Restart</button>
+            <button id="white-btn" class="btn">White</button>            
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
