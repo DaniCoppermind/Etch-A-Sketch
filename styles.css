@@ -13,75 +13,80 @@ body {
     font-size: 1em;
 }
 
-.title {
-    text-align: center;
-}
 
-#etch-container {
+/* Container */
+
+.flex-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
-    gap: 1em;
-    width: 50em;
-    height: 32em;
-    margin: 0 auto;
+    width: 70em;
+    height: 38em;
+    margin: 2.3vw auto;
 
     background-color: rgba(185,21,32,255);
     border-radius: 1.5em;
 }
 
-/* Container styles */
+/* Board */
 
-#etch-screen {
-    width: 45em;
-    height: 22em;
-    background-color: white;
+#board {
+    display: grid;
+
+    width: 60em;
+    height: 26em;
+    margin-bottom: .3em;
 }
 
-canvas {
-    width: inherit;
-    height: inherit;
-}
+/* Buttons */
 
-/* Controls */
-
-#etch-controls {
+.buttons{
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 4.5em;
 }
 
-#etch-sizes {
+.size-board {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1em;
+    justify-content: center;
+    gap: .7em;
+
+    border-radius: .5em;
 }
 
-/* Buttons styles */
-
-.btn {
-    cursor: pointer;
-    border: none;
-}
-
-
-#black-btn,
-#white-btn {
+#color-btn {
     border-radius: 50%;
     width: 5em;
     height: 5em;
+
+    border: none;
+    cursor: pointer;
 }
 
-#random-btn,
-#restart-btn {
+#setting-btn {
     border-radius: .5em;
     width: 5em;
     height: 3em;
+
+    border: none;
+    cursor: pointer;
 }
 
-.text-size {
-    align-self: flex-start;
+.black {
+    background-color: black;
+    color: white;
+}
+
+.black:active {
+    background-color: rgb(20, 20, 20);
+}
+
+.random {
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,255,25,1) 50%, rgba(12,0,255,1) 100%);
+    color: white;
+}
+
+.random:active {
+    background: linear-gradient(90deg, rgba(12,0,255,1) 0%, rgba(0,255,25,1) 50%, rgba(255,0,0,1) 100%);
 }
